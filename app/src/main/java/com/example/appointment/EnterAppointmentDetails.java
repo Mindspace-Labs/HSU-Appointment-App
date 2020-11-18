@@ -2,14 +2,13 @@ package com.example.appointment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class EnterAppointmentDetails extends AppCompatActivity {
 
     private Button button;
     private EditText name, sid, pnum, fac, con;
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 String userfac = fac.getText().toString();
                 String usercon = con.getText().toString();
 
-                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                Intent intent = new Intent(EnterAppointmentDetails.this, AppointmentConfirmation.class);
                 intent.putExtra("keyname",username);
                 intent.putExtra("keysid",usersid);
                 intent.putExtra("keypnum",userpnum);
