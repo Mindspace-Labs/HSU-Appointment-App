@@ -18,8 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         name = findViewById(R.id.name);
+
         sid = findViewById(R.id.sid);
         pnum = findViewById(R.id.pnumber);
+
         fac = findViewById(R.id.faculty);
         con = findViewById(R.id.condition);
         button = findViewById(R.id.submitButton);
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 String userpnum = pnum.getText().toString();
                 String userfac = fac.getText().toString();
                 String usercon = con.getText().toString();
+
                 Intent intent = new Intent(MainActivity.this,MainActivity2.class);
                 intent.putExtra("keyname",username);
                 intent.putExtra("keysid",usersid);
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         }
+
 
 
 }
