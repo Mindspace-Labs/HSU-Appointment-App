@@ -15,7 +15,7 @@ public class EnterAppointmentDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_appointment_details);
         name = findViewById(R.id.name);
 
         sid = findViewById(R.id.sid);

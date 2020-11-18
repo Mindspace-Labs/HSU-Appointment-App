@@ -11,7 +11,8 @@
         android:theme="@style/Theme.Appointment">
         <activity android:name=".SelectAppointmentDate"></activity>
         <activity android:name=".AppointmentConfirmation" />
-        <activity android:name=".EnterAppointmentDetails">
+        <activity android:name=".EnterAppointmentDetails" />
+        <activity android:name=".AppHomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
