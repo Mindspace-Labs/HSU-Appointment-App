@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.appointment">
+    package="com.example.HSUAppProject">
 
     <application
         android:allowBackup="true"
@@ -9,16 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appointment">
-        <activity android:name=".SelectAppointmentDate"></activity>
-        <activity android:name=".AppointmentConfirmation" />
-        <activity android:name=".EnterAppointmentDetails" />
-        <activity android:name=".AppHomeScreen">
+        <activity android:name="com.example.HSUAppProject.HomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.HSUAppProject.CancelAppointment"></activity>
+        <activity android:name="com.example.HSUAppProject.ViewReport" />
+        <activity
+            android:name=".MyMedicalRecords"
+            android:label="@string/title_activity_my_medical_records" />
+        <activity android:name="com.example.HSUAppProject.Prescriptions" />
+        <activity
+            android:name=".ViewAppointments"
+            android:label="@string/title_activity_view_appointments" />
+
+        <activity android:name="com.example.HSUAppProject.SelectAppointmentType" />
+        <activity android:name="com.example.HSUAppProject.SelectAppointmentDate" />
+        <activity android:name="com.example.HSUAppProject.AppointmentConfirmation" />
+        <activity android:name="com.example.HSUAppProject.EnterAppointmentDetails" />
     </application>
 
 </manifest>

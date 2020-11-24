@@ -1,4 +1,4 @@
-package com.example.appointment;
+package com.example.HSUAppProject;
 
 import org.junit.Test;
 

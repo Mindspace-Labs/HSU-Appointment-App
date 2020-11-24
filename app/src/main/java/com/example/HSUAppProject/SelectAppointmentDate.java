@@ -1,19 +1,12 @@
-package com.example.appointment;
+package com.example.HSUAppProject;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.icu.text.SimpleDateFormat;
-import android.icu.util.Calendar;
-import android.icu.util.GregorianCalendar;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.CalendarView;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.Date;
 
 @RequiresApi(api = Build.VERSION_CODES.N)
 public class SelectAppointmentDate extends AppCompatActivity {
