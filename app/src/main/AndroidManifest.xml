@@ -9,27 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appointment">
-        <activity android:name="com.example.HSUAppProject.HomeScreen">
+        <activity
+            android:name=".ui.UserSettings"
+            android:label="@string/title_activity_user_settings"></activity>
+        <activity android:name=".HomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.HSUAppProject.CancelAppointment"></activity>
-        <activity android:name="com.example.HSUAppProject.ViewReport" />
+        <activity android:name=".CancelAppointment" />
+        <activity android:name=".ViewReport" />
         <activity
             android:name=".MyMedicalRecords"
             android:label="@string/title_activity_my_medical_records" />
-        <activity android:name="com.example.HSUAppProject.Prescriptions" />
+        <activity android:name=".Prescriptions" />
         <activity
             android:name=".ViewAppointments"
             android:label="@string/title_activity_view_appointments" />
-
-        <activity android:name="com.example.HSUAppProject.SelectAppointmentType" />
-        <activity android:name="com.example.HSUAppProject.SelectAppointmentDate" />
-        <activity android:name="com.example.HSUAppProject.AppointmentConfirmation" />
-        <activity android:name="com.example.HSUAppProject.EnterAppointmentDetails" />
+        <activity android:name=".SelectAppointmentType" />
+        <activity android:name=".SelectAppointmentDate" />
+        <activity android:name=".AppointmentConfirmation" />
+        <activity android:name=".EnterAppointmentDetails" />
     </application>
 
 </manifest>
