@@ -9,6 +9,24 @@
     <string name="title_activity_view_appointments">View Appointments</string>
     <string name="title_dashboard">Dashboard</string>
 
+    <string name="registrationSignUp">Registration</string>
+    <string name="id_numberSignUp">ID Number</string>
+    <string name="firstNameSignUp">First Name</string>
+    <string name="lastNameSignUp">Last Name</string>
+    <string name="passwordSignUp">Password</string>
+    <string name="signUpButton">Sign Up</string>
+    <string name="loginLogin">Login</string>
+    <string name="id_numberLogin">ID Number</string>
+    <string name="passwordLogin">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="mainLogOut">Log Out</string>
+    <string name="select_date_hint">Select Date</string>
+    <string name="createAppSubmit">Submit</string>
+    <string name="need_an_account_sign_up">Need an account? Sign up</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="condition_description">Condition Description...</string>
+    <string name="create_appointment_test">Create Appointment</string>
+
     <string-array name="select_appt_type_array">
         <item>Choose an appointment type</item>
         <item>Physical Injuries</item>
