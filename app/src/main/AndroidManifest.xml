@@ -32,6 +32,9 @@
         <activity android:name=".SelectAppointmentDate" />
         <activity android:name=".AppointmentConfirmation" />
         <activity android:name=".EnterAppointmentDetails" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".CreateAppointment"/>
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>

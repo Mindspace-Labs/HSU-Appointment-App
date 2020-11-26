@@ -2,6 +2,7 @@ package com.example.HSUAppProject;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -20,11 +21,20 @@ import androidx.navigation.ui.NavigationUI;
 public class HomeScreen extends AppCompatActivity {
     ImageButton userButton;
 
+    SharedPreferences sp;
+    SharedPreferences.Editor edit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         BottomNavigationView navView = findViewById(R.id.nav_view);
+
+        sp = getSharedPreferences("UserPref", Context.MODE_PRIVATE);
+        if(sp.getString("uID", null) == null){
+            startActivity(new Intent(getApplicationContext(), Login.class));
+        }
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         //AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
