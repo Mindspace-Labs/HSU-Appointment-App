@@ -65,7 +65,7 @@ public class CreateAppointment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(CreateAppointment.this, "Appointment submitted for approval!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), HomeScreen.class));
             }
         });
 

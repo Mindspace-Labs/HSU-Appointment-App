@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
 
         sp = getSharedPreferences("UserPref", Context.MODE_PRIVATE);
         if(sp.getString("uID", null) != null){
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), HomeScreen.class));
         }
 
         lgnID = findViewById(R.id.loginID);
@@ -80,7 +80,7 @@ public class Login extends AppCompatActivity {
                                 edit.commit();
 
                                 Toast.makeText(Login.this, "Logged In Successfully!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                startActivity(new Intent(getApplicationContext(), HomeScreen.class));
                             } else {
                                 lgnPassword.setError("Incorrect password");
                                 lgnPassword.requestFocus();
