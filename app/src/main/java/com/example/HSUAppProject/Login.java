@@ -77,7 +77,8 @@ public class Login extends AppCompatActivity {
                             if(dbPassword.equals(password)) {
                                 edit = sp.edit();
                                 edit.putString("uID", ID);
-                                if(Character.compare(ID.charAt(0), (char)8) == 0){
+                                String toCheck = Character.toString(ID.charAt(0));
+                                if(toCheck.equals("8")){
                                     edit.putString("type", "Student");
                                     edit.commit();
                                     Toast.makeText(Login.this, "Logged In Successfully!", Toast.LENGTH_SHORT).show();

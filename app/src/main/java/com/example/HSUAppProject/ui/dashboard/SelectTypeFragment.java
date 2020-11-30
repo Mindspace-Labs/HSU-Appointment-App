@@ -2,6 +2,7 @@ package com.example.HSUAppProject.ui.dashboard;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,16 +22,19 @@ import com.example.HSUAppProject.HomeScreen;
 import com.example.HSUAppProject.R;
 import com.example.HSUAppProject.ui.UserSettings;
 
+import org.w3c.dom.Text;
+
 public class SelectTypeFragment extends Fragment {
     private Button newButton;
 
     private SelectTypeViewModel selectTypeViewModel;
+    TextView test;
+    SharedPreferences sp;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        selectTypeViewModel =
-                new ViewModelProvider(this).get(SelectTypeViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        selectTypeViewModel = new ViewModelProvider(this).get(SelectTypeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_select_type, container, false);
+
         final TextView textView = root.findViewById(R.id.text_dashboard);
         
         selectTypeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
@@ -42,7 +46,10 @@ public class SelectTypeFragment extends Fragment {
 
         newButton = (Button) root.findViewById(R.id.button2);
         newButton.setOnClickListener(new Button_Clicker());
+        test = root.findViewById(R.id.viewCheck);
 
+        sp = this.getActivity().getSharedPreferences("UserPref", Context.MODE_PRIVATE);
+        test.setText(sp.getString("type", null));
 
         return root;
     }
