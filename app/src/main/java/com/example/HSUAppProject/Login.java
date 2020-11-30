@@ -77,10 +77,19 @@ public class Login extends AppCompatActivity {
                             if(dbPassword.equals(password)) {
                                 edit = sp.edit();
                                 edit.putString("uID", ID);
-                                edit.commit();
+                                if(Character.compare(ID.charAt(0), (char)8) == 0){
+                                    edit.putString("type", "Student");
+                                    edit.commit();
+                                    Toast.makeText(Login.this, "Logged In Successfully!", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(getApplicationContext(), HomeScreen.class));
 
-                                Toast.makeText(Login.this, "Logged In Successfully!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                                } else {
+                                    edit.putString("type", "Staff");
+                                    edit.commit();
+
+                                    Toast.makeText(Login.this, "Logged In Successfully!", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                                }
                             } else {
                                 lgnPassword.setError("Incorrect password");
                                 lgnPassword.requestFocus();

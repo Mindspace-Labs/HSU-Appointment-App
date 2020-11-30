@@ -47,6 +47,7 @@ public class UserSettings extends AppCompatActivity {
             public void onClick(View v) {
                 edit = sp.edit();
                 edit.putString("uID", null);
+                edit.putString("type", null);
                 edit.commit();
 
                 Toast.makeText(UserSettings.this, "Logged Out Successfully!", Toast.LENGTH_SHORT).show();

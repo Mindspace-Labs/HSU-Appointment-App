@@ -97,10 +97,18 @@ public class SignUp extends AppCompatActivity {
 
                 edit = sp.edit();
                 edit.putString("uID", ID);
-                edit.commit();
+                if(Character.compare(ID.charAt(0), (char)8) == 0){
+                    edit.putString("type", "Student");
+                    edit.commit();
+                    Toast.makeText(SignUp.this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                } else {
+                    edit.putString("type", "Staff");
+                    edit.commit();
 
-                Toast.makeText(SignUp.this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                    Toast.makeText(SignUp.this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                }
             }
         });
 

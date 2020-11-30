@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.HSUAppProject.CreateAppointment;
 import com.example.HSUAppProject.EnterAppointmentDetails;
 import com.example.HSUAppProject.HomeScreen;
 import com.example.HSUAppProject.R;
@@ -51,7 +52,7 @@ public class SelectTypeFragment extends Fragment {
         public void onClick(View v) {
             if (v == newButton) {
 
-                Intent intent = new Intent(getActivity(), EnterAppointmentDetails.class);
+                Intent intent = new Intent(getActivity(), CreateAppointment.class);
                 startActivity(intent);
 
             }
