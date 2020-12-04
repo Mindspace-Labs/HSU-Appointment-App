@@ -36,7 +36,11 @@ public class SignUp extends AppCompatActivity {
 
         sp = getSharedPreferences("UserPref", Context.MODE_PRIVATE);
         if(sp.getString("uID", null) != null){
-            startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+            if(sp.getString("type", null).equals("Student")) {
+                startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+            } else {
+                startActivity(new Intent(getApplicationContext(), FullAppointmentList.class));
+            }
         }
 
         regID = findViewById(R.id.signUpID);
@@ -107,7 +111,7 @@ public class SignUp extends AppCompatActivity {
                     edit.commit();
 
                     Toast.makeText(SignUp.this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                    startActivity(new Intent(getApplicationContext(), FullAppointmentList.class));
                 }
             }
         });

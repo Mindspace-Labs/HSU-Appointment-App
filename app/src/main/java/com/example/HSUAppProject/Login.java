@@ -39,7 +39,11 @@ public class Login extends AppCompatActivity {
 
         sp = getSharedPreferences("UserPref", Context.MODE_PRIVATE);
         if(sp.getString("uID", null) != null){
-            startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+            if(sp.getString("type", null).equals("Student")) {
+                startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+            } else {
+                startActivity(new Intent(getApplicationContext(), FullAppointmentList.class));
+            }
         }
 
         lgnID = findViewById(R.id.loginID);
@@ -89,7 +93,7 @@ public class Login extends AppCompatActivity {
                                     edit.commit();
 
                                     Toast.makeText(Login.this, "Logged In Successfully!", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                                    startActivity(new Intent(getApplicationContext(), FullAppointmentList.class));
                                 }
                             } else {
                                 lgnPassword.setError("Incorrect password");

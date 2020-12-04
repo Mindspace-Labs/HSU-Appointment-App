@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appointment">
+        <activity android:name=".FullAppointmentList"></activity>
         <activity
             android:name=".ui.UserSettings"
-            android:label="@string/title_activity_user_settings"></activity>
+            android:label="@string/title_activity_user_settings" />
         <activity android:name=".HomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,8 +34,8 @@
         <activity android:name=".AppointmentConfirmation" />
         <activity android:name=".EnterAppointmentDetails" />
         <activity android:name=".SignUp" />
-        <activity android:name=".CreateAppointment"/>
-        <activity android:name=".Login"></activity>
+        <activity android:name=".CreateAppointment" />
+        <activity android:name=".Login" />
     </application>
 
 </manifest>
