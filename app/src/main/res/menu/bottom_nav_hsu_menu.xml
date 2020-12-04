@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/ic_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/addappt"
+        android:icon="@drawable/add_appt"
+        android:title="@string/title_new_appointment" />
+    <item
+        android:id="@+id/ic_prescription"
+        android:icon="@drawable/ic_prescription"
+        android:title="@string/title_activity_prescriptions" />
+    <item
+        android:id="@+id/ic_medrecord"
+        android:icon="@drawable/ic_medrecord"
+        android:title="@string/title_activity_my_medical_records" />
+
+</menu>
