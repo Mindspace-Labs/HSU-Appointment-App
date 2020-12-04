@@ -4,7 +4,7 @@
 
         <EditTextPreference
             app:key="signature"
-            app:title="@string/signature_title"
+            app:title="@string/chat_title"
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
@@ -12,7 +12,7 @@
             app:entries="@array/reply_entries"
             app:entryValues="@array/reply_values"
             app:key="reply"
-            app:title="@string/reply_title"
+            app:title="@string/units_title"
             app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
@@ -21,7 +21,7 @@
 
         <SwitchPreferenceCompat
             app:key="sync"
-            app:title="@string/sync_title" />
+            app:title="@string/chng_pw" />
 
         <SwitchPreferenceCompat
             app:dependency="sync"

@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#51C1B1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
@@ -21,21 +22,26 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/loginID"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
         android:layout_marginTop="68dp"
+        android:background="@drawable/txt_signin"
         android:hint="@string/id_numberLogin"
+        android:padding="15dp"
+        android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleLogin" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/loginPassword"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/txt_signin"
         android:hint="@string/passwordLogin"
         android:inputType="textPassword"
+        android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +52,8 @@
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:layout_marginTop="160dp"
+        android:background="@drawable/bg_bttn"
+
         android:text="@string/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
