@@ -25,7 +25,6 @@
         <activity
             android:name=".MyMedicalRecords"
             android:label="@string/title_activity_my_medical_records" />
-        <activity android:name=".Prescriptions" />
         <activity
             android:name=".ViewAppointments"
             android:label="@string/title_activity_view_appointments" />
