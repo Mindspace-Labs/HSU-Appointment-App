@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.HSUAppProject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Appointment">
+        <activity
+            android:name=".ui.UserSettings"
+            android:label="@string/title_activity_user_settings"></activity>
+        <activity android:name=".HomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewReport" />
+        <activity
+            android:name=".MyMedicalRecords"
+            android:label="@string/title_activity_my_medical_records" />
+        <activity android:name=".Prescriptions" />
+        <activity
+            android:name=".ViewAppointments"
+            android:label="@string/title_activity_view_appointments" />
+        <activity android:name=".SelectAppointmentType" />
+        <activity android:name=".SelectAppointmentDate" />
+        <activity android:name=".AppointmentConfirmation" />
+        <activity android:name=".EnterAppointmentDetails" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".CreateAppointment"/>
+        <activity android:name=".Login"></activity>
+    </application>
+
+</manifest>

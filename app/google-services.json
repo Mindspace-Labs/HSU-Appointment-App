@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "458401402690",
+    "firebase_url": "https://hsu-system.firebaseio.com",
+    "project_id": "hsu-system",
+    "storage_bucket": "hsu-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458401402690:android:777fb5b83a0ccbb995c2db",
+        "android_client_info": {
+          "package_name": "com.example.HSUAppProject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458401402690-m8qhf3kfbdajij9te9c66avn532a0a6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZTvvAhJojxI2SqWaP11W_XJb0ureD32c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458401402690-m8qhf3kfbdajij9te9c66avn532a0a6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458401402690:android:78d2d387602c64fe95c2db",
+        "android_client_info": {
+          "package_name": "com.example.hsusystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458401402690-m8qhf3kfbdajij9te9c66avn532a0a6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZTvvAhJojxI2SqWaP11W_XJb0ureD32c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458401402690-m8qhf3kfbdajij9te9c66avn532a0a6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

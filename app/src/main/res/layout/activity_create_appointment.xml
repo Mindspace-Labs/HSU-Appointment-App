@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAppointment">
+
+    <TextView
+        android:id="@+id/createAppDate"
+        android:layout_width="337dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="92dp"
+        android:hint="@string/select_date_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/createAppDisc"
+        android:layout_width="344dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="224dp"
+        android:gravity="top"
+        android:hint="@string/condition_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/createAppSubmit"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/createAppSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAppDisc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
