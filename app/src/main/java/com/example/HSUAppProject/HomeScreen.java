@@ -34,6 +34,9 @@ public class HomeScreen extends AppCompatActivity {
         if(sp.getString("uID", null) == null){
             startActivity(new Intent(getApplicationContext(), Login.class));
         }
+        if(sp.getString("type", null).equals("Staff")){
+            startActivity(new Intent(getApplicationContext(), FullAppointmentList.class));
+        }
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

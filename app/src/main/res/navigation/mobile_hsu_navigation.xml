@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/ic_prescription"
-        android:name="com.example.HSUAppProject.ui.dashboard.SelectTypeFragment"
+        android:name="com.example.HSUAppProject.ui.notifications.NotificationsFragment"
         android:label="@string/title_activity_prescriptions"
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
         android:id="@+id/ic_medrecord"
-        android:name="com.example.HSUAppProject.ui.dashboard.MedReport"
+        android:name="com.example.HSUAppProject.ui.notifications.NotificationsFragment"
         android:label="@string/title_activity_my_medical_records"
         tools:layout="@layout/fragment_notifications" />
 

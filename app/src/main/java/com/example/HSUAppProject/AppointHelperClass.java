@@ -1,8 +1,8 @@
 package com.example.HSUAppProject;
 
 public class AppointHelperClass {
-    String name, description, date;
-    int studentID;
+    String name, description, date, appID;
+    int studentID, staffID = 0;
 
     public AppointHelperClass(){
     }
@@ -12,6 +12,15 @@ public class AppointHelperClass {
         this.name = studentName;
         this.description = disc;
         this.date = date;
+    }
+
+    public AppointHelperClass(String ID, String studentName, String disc, String date, int staffID, String appID){
+        this.studentID = Integer.parseInt(ID);
+        this.name = studentName;
+        this.description = disc;
+        this.date = date;
+        this.staffID = staffID;
+        this.appID = appID;
     }
 
     public String getName() {
