@@ -38,7 +38,7 @@ public class SignUp extends AppCompatActivity {
         if(sp.getString("uID", null) != null){
             if(sp.getString("type", null).equals("Student")) {
                 startActivity(new Intent(getApplicationContext(), HomeScreen.class));
-            } else {
+            } else if(sp.getString("type", null).equals("Staff")){
                 startActivity(new Intent(getApplicationContext(), FullAppointmentList.class));
             }
         }
